@@ -1,0 +1,10 @@
+{
+  "name": "Raamatukogu & Müügikataloog",
+  "description": "Kataloog raamatute haldamiseks ja müügiks koos fotode, tutvustuse, ilmumisaasta, autori, väärtuse ja hinnaga.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
