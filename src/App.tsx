@@ -664,7 +664,10 @@ export default function App() {
         isOpen={isExportImportModalOpen}
         books={books}
         onClose={() => setIsExportImportModalOpen(false)}
-        onBooksUpdated={(newBooks) => setBooks(newBooks)}
+        onBooksUpdated={async (newBooks) => {
+  setBooks(newBooks);
+  await dbService.saveBooks(newBooks);
+}}
       />
     </div>
   );
